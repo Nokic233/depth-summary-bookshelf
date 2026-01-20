@@ -1,5 +1,12 @@
 import React, { useState } from 'react';
 import { BookOpen, Brain, TrendingUp, AlertTriangle, CheckCircle, XCircle, ChevronDown, ChevronUp, Scale, Lightbulb, User } from 'lucide-react';
+import type { Route } from "./+types/Poor Charlie’s Almanack";
+
+export function meta({}: Route.MetaArgs) {
+  return [
+    { title: "穷查理宝典" },
+  ];
+}
 
 const App = () => {
   const [activeTab, setActiveTab] = useState('overview');

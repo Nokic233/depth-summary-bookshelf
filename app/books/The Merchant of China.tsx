@@ -1,6 +1,12 @@
 import React, { useState } from 'react';
 import { BookOpen, TrendingUp, Users, Scale, ArrowRight, ArrowUp, ArrowDown } from 'lucide-react';
+import type { Route } from "./+types/The Merchant of China";
 
+export function meta({}: Route.MetaArgs) {
+  return [
+    { title: "货殖列传" },
+  ];
+}
 const HuozhiDashboard = () => {
   const [activeTab, setActiveTab] = useState('origin');
 

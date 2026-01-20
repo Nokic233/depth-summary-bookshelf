@@ -1,5 +1,12 @@
 import React, { useState } from 'react';
 import { BookOpen, Rocket, Zap, Brain, AlertTriangle, Cpu, Globe, Anchor, ChevronRight, Scale, Terminal, Factory, Code, DollarSign, X } from 'lucide-react';
+import type { Route } from "./+types/Elon Musk";
+
+export function meta({}: Route.MetaArgs) {
+  return [
+    { title: "埃隆·马斯克" },
+  ];
+}
 
 // 核心数据结构：章节与深度解读
 const contentData = {

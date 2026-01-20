@@ -41,8 +41,6 @@ const BookCard = ({ book }: { book: Book }) => (
         <div className="absolute inset-0 bg-gradient-to-br from-white/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
       </div>
       
-      {/* 书页效果 */}
-      <div className="absolute right-0 top-1 bottom-1 w-1 bg-gradient-to-r from-amber-50 to-amber-100 shadow-inner" />
     </div>
   </Link>
 );

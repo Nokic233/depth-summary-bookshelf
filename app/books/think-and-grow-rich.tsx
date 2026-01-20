@@ -1,6 +1,12 @@
 import React, { useState } from 'react';
 import { BookOpen, Brain, Target, Users, Zap, AlertTriangle, CheckCircle, XCircle, ArrowRight, BarChart, Eye, Activity } from 'lucide-react';
+import type { Route } from "./+types/think-and-grow-rich";
 
+export function meta({}: Route.MetaArgs) {
+  return [
+    { title: "思考致富" },
+  ];
+}
 // Color palette constants
 const COLORS = {
   primary: "text-amber-600",
