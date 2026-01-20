@@ -30,4 +30,9 @@ export const books: Book[] = [
         title: '黄仁勋：英伟达之芯',
         author: '斯蒂芬·威特',
     },
+    {
+        id: "One Man's View of the World",
+        title: '李光耀观天下',
+        author: '李光耀',
+    },
 ];
