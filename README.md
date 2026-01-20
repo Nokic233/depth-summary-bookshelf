@@ -1,87 +1,65 @@
-# Welcome to React Router!
+# Depth Summary Bookshelf
 
-A modern, production-ready template for building full-stack React applications using React Router.
+这是一个基于 React Router 7 构建的深度书籍摘要书架应用，旨在展示和管理书籍的深度阅读摘要。
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
+## 项目介绍
 
-## Features
+该项目是一个现代化的 Web 应用，使用 React Router v7 作为核心框架，结合 Vite 进行快速构建。它具有以下特点：
 
-- 🚀 Server-side rendering
-- ⚡️ Hot Module Replacement (HMR)
-- 📦 Asset bundling and optimization
-- 🔄 Data loading and mutations
-- 🔒 TypeScript by default
-- 🎉 TailwindCSS for styling
-- 📖 [React Router docs](https://reactrouter.com/)
+- **动态路由**：根据书籍数据自动生成每本书的独立也没路由。
+- **现代化技术栈**：使用 React 19, TypeScript, Tailwind CSS v4。
+- **高性能**：利用 Vite 的极速 HMR 和构建能力。
+- **清晰的架构**：基于 React Router 7 的路由配置 (`routes.ts`) 和数据驱动的设计。
 
-## Getting Started
+## 技术栈
 
-### Installation
+- **框架**: [React Router 7](https://reactrouter.com/)
+- **构建工具**: [Vite](https://vitejs.dev/)
+- **语言**: TypeScript
+- **样式**: [Tailwind CSS v4](https://tailwindcss.com/)
+- **UI 库**: React 19
 
-Install the dependencies:
+## 快速开始
+
+### 安装依赖
 
 ```bash
 npm install
 ```
 
-### Development
-
-Start the development server with HMR:
+### 开发环境运行
 
 ```bash
 npm run dev
 ```
+访问 http://localhost:5173 即可查看应用。
 
-Your application will be available at `http://localhost:5173`.
-
-## Building for Production
-
-Create a production build:
+### 构建生产版本
 
 ```bash
 npm run build
 ```
 
-## Deployment
-
-### Docker Deployment
-
-To build and run using Docker:
+### 预览生产版本
 
 ```bash
-docker build -t my-app .
-
-# Run the container
-docker run -p 3000:3000 my-app
+npm run start
 ```
 
-The containerized application can be deployed to any platform that supports Docker, including:
-
-- AWS ECS
-- Google Cloud Run
-- Azure Container Apps
-- Digital Ocean App Platform
-- Fly.io
-- Railway
-
-### DIY Deployment
-
-If you're familiar with deploying Node applications, the built-in app server is production-ready.
-
-Make sure to deploy the output of `npm run build`
+## 项目结构
 
 ```
-├── package.json
-├── package-lock.json (or pnpm-lock.yaml, or bun.lockb)
-├── build/
-│   ├── client/    # Static assets
-│   └── server/    # Server-side code
+app/
+├── books/          # 书籍页面组件
+├── components/     # 通用组件
+├── data/           # 数据文件 (如 books.ts)
+├── routes/         # 路由页面 (如 home.tsx)
+├── root.tsx        # 根布局
+└── routes.ts       # 路由配置
 ```
 
-## Styling
+## 功能特性
 
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
-
----
-
-Built with ❤️ using React Router.
+- 首页展示书架
+- 点击书籍进入详情页（阅读摘要）
+- 响应式设计
