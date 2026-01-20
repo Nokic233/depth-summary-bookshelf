@@ -16,7 +16,7 @@ const BookCard = ({ book }: { book: Book }) => (
       <div className="relative w-full h-full rounded-sm overflow-hidden shadow-lg group-hover:shadow-2xl group-hover:shadow-amber-500/20 transition-shadow duration-500">
         {/* 封面图片 */}
         <img
-          src={`/images/${book.id}.jpg`}
+          src={`${import.meta.env.BASE_URL}images/${book.id}.jpg`}
           alt={book.title}
           className="w-full h-full object-cover"
         />
