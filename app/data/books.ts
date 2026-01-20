@@ -35,4 +35,9 @@ export const books: Book[] = [
         title: '李光耀观天下',
         author: '李光耀',
     },
+    {
+        id: 'The Stories of the Ming Dynasty',
+        title: '明朝那些事儿',
+        author: '当年明月',
+    },
 ];
