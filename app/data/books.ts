@@ -45,4 +45,9 @@ export const books: Book[] = [
         title: '可能性的艺术',
         author: '刘瑜',
     },
+    {
+        id: 'HTTP Explained with Diagrams',
+        title: '图解 HTTP',
+        author: '上野宣',
+    },
 ];
