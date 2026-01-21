@@ -40,4 +40,9 @@ export const books: Book[] = [
         title: '明朝那些事儿',
         author: '当年明月',
     },
+    {
+        id: 'The art of possibility',
+        title: '可能性的艺术',
+        author: '刘瑜',
+    },
 ];
