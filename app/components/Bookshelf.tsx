@@ -1,6 +1,6 @@
 import { Link } from "react-router";
 import { books, type Book } from "../data/books";
-import { BookOpen, Sparkles } from "lucide-react";
+import { BookOpen, Sparkles, Github } from "lucide-react";
 
 const BookCard = ({ book }: { book: Book }) => (
   <Link
@@ -117,7 +117,16 @@ export default function Bookshelf() {
 
       {/* 底部 */}
       <footer className="relative py-8 text-center text-slate-500 text-sm border-t border-slate-800/50">
-        <p>📚 阅读是最好的投资</p>
+        <p className="mb-4">📚 阅读是最好的投资</p>
+        <a 
+          href="https://github.com/Nokic233/depth-summary-bookshelf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 hover:text-amber-400 transition-colors"
+        >
+          <Github className="w-4 h-4" />
+          <span>源代码</span>
+        </a>
       </footer>
     </div>
   );
