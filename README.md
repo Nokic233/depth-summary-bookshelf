@@ -18,6 +18,7 @@
 - **语言**: TypeScript
 - **样式**: [Tailwind CSS v4](https://tailwindcss.com/)
 - **UI 库**: React 19
+- **Node 版本**: 24.13.0
 
 ## 快速开始
 
